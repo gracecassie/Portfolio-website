@@ -195,3 +195,9 @@ img {
   color: hwb(0 5% 94%);
   font-size: 15px; 
 }
+
+.portfolio-title {
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+}
