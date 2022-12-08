@@ -17,7 +17,7 @@
 body {
   margin-left: 40px;
   margin-right: 40px;
-  background-color: rgb(236, 250, 253);
+  background-color: rgb(245, 252, 253);
 }
 
 .main-nav {
@@ -47,6 +47,7 @@ body {
   margin-top: 40px;
 }
 
+.footer-wrapper,
 .contact-wrapper,
 .about-wrapper,
 .intro-wrapper,
@@ -89,7 +90,6 @@ body {
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-  align-items:flex-start
 }
 
 .about-wrapper {
@@ -101,7 +101,8 @@ body {
 }
 
 .summary-intro {
-  
+  padding: 20px;
+  width: 50%;
 }
 
 .paragraph {
@@ -116,7 +117,8 @@ body {
 }
 
 .profile-pic-wrap {
-  
+  padding: 20px;
+  width: 50%;
 }
 
 img {
@@ -191,9 +193,11 @@ img {
 .portfolio-gallery-list{
   padding-left: 0;
   list-style-type: none;
+  display: flex;
+  align-items: baseline;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 4px;
+  grid-gap: 20px;
 }
 
 @media (max-width: 999px) {
@@ -304,3 +308,23 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+.social-link-image {
+  text-decoration: none;
+  padding: 10px;
+  width: 60px
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
