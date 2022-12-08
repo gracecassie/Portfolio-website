@@ -47,6 +47,7 @@ body {
   margin-top: 40px;
 }
 
+.gator-wrapper,
 .footer-wrapper,
 .contact-wrapper,
 .about-wrapper,
@@ -74,8 +75,6 @@ body {
   color: rgb(30, 30, 31);
 }
 
-.summary-intro {
-}
 
 .intro {
   font-family: playfair-display, serif;
@@ -92,6 +91,7 @@ body {
   justify-content: space-between;
 }
 
+
 .about-wrapper {
   max-width: 800px;
   margin-left: auto;
@@ -101,8 +101,7 @@ body {
 }
 
 .summary-intro {
-  padding: 20px;
-  width: 50%;
+  padding-right: 20px;
 }
 
 .paragraph {
@@ -113,12 +112,12 @@ body {
 }
 
 .profile-pic {
-  width: 300px;
+  width: 350px;
 }
 
 .profile-pic-wrap {
-  padding: 20px;
-  width: 50%;
+  padding-left: 20px;
+  width: 100%;
 }
 
 img {
@@ -143,6 +142,22 @@ img {
 
 @media (max-width: 999px) {
   .contact-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 999px) {
+  .footer-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 999px) {
+  .gator-main-content {
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       flex-direction: column;
       align-items: center;
@@ -312,7 +327,7 @@ textarea {
 .social-link-image {
   text-decoration: none;
   padding: 10px;
-  width: 60px
+  width: 35px
 }
 
 .social-footer {
@@ -328,3 +343,49 @@ textarea {
   margin-bottom: 32px;
 }
 
+.gator-image {
+  padding: 20px;
+  width: 500px;
+}
+
+.gator-main-content {
+  display: flex;
+  justify-content:center;
+}
+
+.gator-feature-content {
+  padding-right: 20px;
+  width: 100%;
+}
+
+.gator-description {
+  padding-left: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gator-text {
+  text-align: center;
+}
+
+.gator-title {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.gator-caption {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 15px;
+}
+
+.gator-details {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
