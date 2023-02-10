@@ -203,13 +203,19 @@ img {
   text-decoration: none;
 }
 
+.portfolio-main-content-wrapper {
+  padding-top: 30px;
+}
+
 .portfolio-gallery-list{
-  padding-left: 0;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
   list-style-type: none;
   display: flex;
   align-items: baseline;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
@@ -231,11 +237,11 @@ img {
 }
 
 .portfolio-gallery-list p {
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-weight: 700;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
   font-style: normal;
-  color: hwb(0 5% 94%);
-  font-size: 15px; 
+  font-size: 25px;
+  color: black
 }
 
 .portfolio-title {
@@ -349,6 +355,7 @@ textarea {
 .gator-main-content {
   display: flex;
   justify-content:center;
+  align-items: center;
 }
 
 .gator-feature-content {
@@ -357,9 +364,9 @@ textarea {
 }
 
 .gator-description {
-  padding-left: 40px;
   flex-direction: column;
   align-items: center;
+  width: 80%
 }
 
 .gator-text {
