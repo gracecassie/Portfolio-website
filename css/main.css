@@ -89,6 +89,7 @@ body {
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center
 }
 
 
@@ -101,7 +102,7 @@ body {
 }
 
 .summary-intro {
-  padding-right: 20px;
+  width: 90%
 }
 
 .paragraph {
@@ -112,11 +113,10 @@ body {
 }
 
 .profile-pic {
-  width: 350px;
+  width: 400px
 }
 
 .profile-pic-wrap {
-  padding-left: 20px;
   width: 100%;
 }
 
